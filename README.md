@@ -18,7 +18,7 @@ Este é um exercício de desenvolvimento frontend que transforma um poema cláss
 
 ```
 pagina-cordel/
-├── cordel.html          # Arquivo principal HTML
+├── index.html          # Arquivo principal HTML
 ├── static/
 │   └── cordel.css       # Estilos CSS
 ├── imagens/             # Pasta para imagens de fundo
