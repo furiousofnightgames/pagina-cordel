@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* FONTES GOOGLE */
+
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
@@ -26,7 +26,7 @@ body {
     width: 100%;
 }
 
-/* HEADER */
+
 header {
     background: var(--cor-primaria);
     color: var(--cor-texto-claro);
@@ -64,7 +64,7 @@ footer a:visited {
     color: rgba(0, 229, 255, 0.726);
 }
 
-/* SESSÕES */
+
 section {
     padding: 10vh 4vh;
     font-family: var(--font-c);
@@ -77,14 +77,14 @@ section.comum {
     color: var(--cor-escura);
 }
 
-/* TEXTO COMUM (apenas leve margem esquerda) */
+
 section.comum p {
     margin-left: clamp(0.8rem, 2vw, 2rem);
     margin-right: clamp(0.8rem, 2vw, 2rem);
     display: block;
 }
 
-/* SESSÕES COM IMAGEM */
+
 section.imagens {
     color: var(--cor-texto-claro);
     background-size: cover;
@@ -95,25 +95,15 @@ section.imagens {
     box-shadow: inset 5px 5px 10px rgba(0,0,0,0.6);
 }
 
-/* PARÁGRAFOS NAS IMAGENS — fundo curto e preciso */
+
 section.imagens p {
     background: rgba(0, 0, 0, 0.45);
-    padding: 0.6rem 0.7rem;     /* "1 dedo" */
+    padding: 0.6rem 0.7rem;     
     margin-left: clamp(0.8rem, 2vw, 2rem);
-    margin-right: 0;            /* Sem espaço extra na direita */
-    width: fit-content;         /* Fundo acompanha apenas o texto */
-    max-width: 80%;             /* Segurança para linhas muito longas */
+    margin-right: 0;     
+    width: fit-content; 
+    max-width: 80%;     
     display: block;
-}
-
-/* DESKTOP */
-@media (min-width: 769px) {
-
-    section.comum p,
-    section.imagens p {
-        font-size: clamp(1.6rem, 2.2vw, 3.2rem);
-        line-height: clamp(2.4rem, 3vw, 4.2rem);
-    }
 }
 
 /* BACKGROUNDS */
@@ -141,6 +131,17 @@ footer a {
     font-weight: bold;
     text-decoration: none;
     text-shadow: 1px 1px 2px black;
+}
+
+
+ /* DESKTOP */
+@media (min-width: 769px) {
+
+    section.comum p,
+    section.imagens p {
+        font-size: clamp(1.6rem, 2.2vw, 3.2rem);
+        line-height: clamp(2.4rem, 3vw, 4.2rem);
+    }
 }
 
 /* TABLET */
